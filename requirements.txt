@@ -3,3 +3,6 @@ pathlib
 pandas
 python-dotenv
 langchain
+openai 
+docarray
+tiktoken 

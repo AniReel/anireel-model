@@ -2,19 +2,26 @@ import requests
 import pathlib 
 import pandas as pd 
 
-id = 100
-n = 10
 
-url = f"https://api.jikan.moe/v4/anime/{id}/full"
+n = 20
 
-print(url)
 
-response = requests.get(url).json()
+
 
 anime = []
 
-for i in range(1, n):
 
+for i in range(1, n):
+    url = f"https://api.jikan.moe/v4/anime/{i}/full"
+
+    response = requests.get(url)
+
+    if response.status_code == 404:
+        continue 
+
+    
+    response = response.json()
+    
     res_dict = {}
 
     res_dict['id'] = response['data']['mal_id']

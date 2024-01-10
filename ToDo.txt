@@ -1,2 +1,5 @@
-create an index update pipeline 
-create Dockerfile 
+create data collection + index update pipeline 
+create database
+store data in database 
+
+create inference pipeline from vector search results by going htorugh databse 

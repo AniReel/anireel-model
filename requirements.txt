@@ -8,3 +8,5 @@ docarray
 tiktoken 
 cohere
 pinecone-client
+uvicorn 
+fastapi 

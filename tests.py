@@ -1,6 +1,10 @@
 from recommend import vector_search, get_anime
 import pinecone
 from dotenv import dotenv_values
+from fastapi.testclient import TestClient
+from main import app 
+
+client = TestClient(app) 
 
 
 
